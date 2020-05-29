@@ -9,7 +9,7 @@ class Recipe(models.Model):
         ('Medium', 'Medium'),
         ('Hard', 'Hard'),
     )
-    name = models.CharField(maxlength=120)
+    name = models.CharField(max_length=120)
     ingredients = models.CharField(max_length=400)
     picture = models.FileField()
     difficulty = models.CharField(choices=DIFFICULTY_LEVELS, max_length=10)
